@@ -1,0 +1,13 @@
+{
+  "header": {
+    "function": "Функции",
+    "wallets": "Кошельки",
+    "participation": "Участие",
+    "resources": "Ресурсы",
+    "news": "Новости"
+  },
+  "languages": {
+    "rus": "Rus",
+    "eng": "Eng"
+  }
+}

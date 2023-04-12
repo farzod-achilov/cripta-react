@@ -1,0 +1,13 @@
+{
+  "header": {
+    "function": "Function",
+    "wallets": "Wallets",
+    "participation": "Participation",
+    "resources": "Rsources",
+    "news": "News"
+  },
+  "languages": {
+    "rus": "Rus",
+    "eng": "Eng"
+  }
+}

@@ -1,0 +1,77 @@
+@mixin text($font, $weight, $size, $height, $color) {
+  margin: 0;
+  font-family: $font;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+header {
+  background: linear-gradient(
+    267.43deg,
+    rgba(0, 255, 163, 0.12) 36.58%,
+    rgba(31, 26, 255, 0.2) 80.91%
+  );
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 25px 10px;
+
+  &__logo {
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__btns {
+    margin-left: auto;
+    display: flex;
+    gap: 6px;
+
+    button,
+    select {
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      text-align: center;
+      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 4px 9px rgba(176, 176, 176, 0.1);
+      backdrop-filter: blur(4px);
+      border-radius: 8px;
+      appearance: none;
+
+      img {
+        margin-right: 7px;
+      }
+
+      @include text("Hauora", 700, 14px, 19px, #fff);
+    }
+  }
+
+  &__nav-list {
+    padding: 0;
+    padding-left: 37px;
+    display: flex;
+    gap: 43px;
+
+    li {
+      list-style-type: none;
+      @include text("Hauora", 600, 14px, 19px, rgba(255, 255, 255, 0.42));
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.42);
+      }
+    }
+    .last-link {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
